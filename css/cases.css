@@ -1,0 +1,154 @@
+/* Estilo para Cases - Layout Lado a Lado */
+.cases-section {
+    background: #031d49;
+    padding: 80px 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cases-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cases-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cases-header .destaque-azul {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00a0e1;
+    line-height: 1.2;
+}
+
+/* Container dos cases lado a lado */
+.case-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap; /* tira a quebra de linha */
+    justify-content: center; /* centraliza horizontalmente */
+}
+
+
+/* Texto e imagem com exatamente o mesmo tamanho */
+.case-text, .case-image {
+    width: 600px;
+    height: 360px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Estilo do bloco de texto */
+.case-text {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Logo */
+.case-logo-top {
+    width: 120px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Título */
+.case-text h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Parágrafo */
+.case-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+/* Estatísticas */
+.case-stat {
+    margin-top: 15px;
+}
+
+.stat-value {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #00a0e1;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 6px;
+}
+
+/* Imagem */
+.case-image {
+    position: relative;
+}
+
+.case-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 16px;
+}
+
+/* Proteção da imagem */
+.protected-image {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+@media (max-width: 1300px) {
+    .case-text, .case-image {
+        width: 45vw; /* largura relativa para caber lado a lado em telas menores */
+        height: auto; /* ajustar altura proporcional */
+    }
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .case-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .case-text, .case-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .case-image img {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .case-text, .case-image {
+        width: 100%; /* empilha um em cima do outro */
+        height: auto;
+    }
+}
