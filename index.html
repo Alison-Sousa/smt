@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/solucoes.css">
     <link rel="stylesheet" href="css/cases.css">
-    <!-- <link rel="stylesheet" href="css/parceiros.css"> -->
+    <link rel="stylesheet" href="css/parceiros.css">
     <link rel="stylesheet" href="css/quemsomos.css">
     <link rel="stylesheet" href="css/valores.css">
     <link rel="stylesheet" href="css/contato.css">
@@ -29,7 +29,7 @@
         <div id="cases-container"></div>
         
         <!-- Carrega parceiros -->
-         <!--<div id="parceiros-container"></div> -->
+        <div id="parceiros-container"></div>
         
         <!-- Carrega quem somos -->
         <div id="quemsomos-container"></div>
@@ -61,22 +61,22 @@
                                 document.getElementById('cases-container').innerHTML = data;
                                 
                                 // Carrega parceiros.html
-                                 // fetch('sections/parceiros.html')
-                                     // .then(response => response.text())
-                                    //  .then(data => {
-                                        //  document.getElementById('parceiros-container').innerHTML = data;
+                                fetch('sections/parceiros.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.getElementById('parceiros-container').innerHTML = data;
                                         
                                         // Carrega quemsomos.html
-                                       <!--  fetch('sections/quemsomos.html')
+                                        fetch('sections/quemsomos.html')
                                             .then(response => response.text())
                                             .then(data => {
                                                 document.getElementById('quemsomos-container').innerHTML = data;
-                                                initScripts(); // Inicializa os scripts  -->
+                                                initScripts(); // Inicializa os scripts
                                             });
-                                    //  });
+                                    });
                             });
                     });
-            //  });
+            });
 
         function initScripts() {
             // Script do slider (mesmo que você já tem)
