@@ -81,7 +81,7 @@ body {
   background: var(--secondary);
 }
 
-/* ========== HOME SECTION (VERSÃO CORRIGIDA) ========== */
+/* ========== HOME SECTION ========== */
 .home-section {
   color: var(--smt-white);
 }
@@ -312,30 +312,57 @@ body {
 
 /* ========== SEÇÃO SOLUÇÕES ========== */
 .solucoes-section {
-  background: #f5f9ff; /* Cor gelo */
-  color: #031d49; /* Texto azul escuro */
+  background: #f5f9ff;
+  color: #031d49;
   padding: 80px 20px;
 }
 
 /* ========== SEÇÃO CASES ========== */
 .cases-section {
-  background: #031d49; /* Azul escuro */
+  background: #031d49;
   color: white;
   padding: 80px 20px;
 }
 
-/* Mantém o menu fixo igual para todas as seções */
-.main-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  background: #031d49 !important; /* Azul escuro */
+/* ========== SEÇÃO QUEM SOMOS ========== */
+.quemsomos-section {
+  background: #031d49;
+  color: white;
+  padding: 80px 20px;
 }
 
-/* ROLAGEM SUAVE */
-html {
-    scroll-behavior: smooth;
+/* Estilos comuns para itens das seções */
+.case-item,
+.equipe-item,
+.solucao-item {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.case-item,
+.equipe-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #00a0e1;
+}
+
+.solucao-item {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Container principal para todas as seções */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
 }
 
 /* SEÇÃO SOLUÇÕES */
@@ -363,66 +390,10 @@ html {
     font-size: 0.9rem;
 }
 
-/* Adicione isso ao final do seu style.css existente */
-
-/* ========== SEÇÃO CASES ========== */
-.cases-section {
-  background: #031d49; /* Azul escuro */
-  color: white;
-  padding: 80px 20px;
+/* ROLAGEM SUAVE */
+html {
+    scroll-behavior: smooth;
 }
-
-/* ========== SEÇÃO PARCEIROS ========== */
-.parceiros-section {
-  background: #f5f9ff; /* Cor gelo */
-  color: #031d49; /* Texto azul escuro */
-  padding: 80px 20px;
-}
-
-/* ========== SEÇÃO QUEM SOMOS ========== */
-.quemsomos-section {
-  background: #031d49; /* Azul escuro */
-  color: white;
-  padding: 80px 20px;
-}
-
-/* Estilos comuns para itens das seções */
-.case-item,
-.parceiro-item,
-.equipe-item,
-.solucao-item {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 25px;
-  border-radius: 8px;
-}
-
-.case-item,
-.equipe-item {
-  background: rgba(255, 255, 255, 0.1);
-  border-left: 4px solid #00a0e1;
-}
-
-.parceiro-item,
-.solucao-item {
-  background: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-/* Container principal para todas as seções */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.container h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.2rem;
-}
-
-
 
 /* ========== RESPONSIVIDADE ========== */
 @media (max-width: 992px) {

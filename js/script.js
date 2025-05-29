@@ -12,7 +12,6 @@ const CONFIG = {
     'home',
     'solucoes',
     'cases',
-    'parceiros',
     'quemsomos',
     'valores',
     'contato'
@@ -22,7 +21,6 @@ const CONFIG = {
     home: 'home-container',
     solucoes: 'solucoes-container',
     cases: 'cases-container',
-    parceiros: 'parceiros-container',
     quemsomos: 'quemsomos-container',
     valores: 'valores-container',
     contato: 'contato-container'

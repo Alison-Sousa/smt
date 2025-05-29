@@ -28,8 +28,7 @@
         <!-- Carrega cases -->
         <div id="cases-container"></div>
         
-        <!-- Carrega parceiros -->
-        <div id="parceiros-container"></div>
+
         
         <!-- Carrega quem somos -->
         <div id="quemsomos-container"></div>
@@ -60,11 +59,7 @@
                             .then(data => {
                                 document.getElementById('cases-container').innerHTML = data;
                                 
-                                // Carrega parceiros.html
-                                fetch('sections/parceiros.html')
-                                    .then(response => response.text())
-                                    .then(data => {
-                                        document.getElementById('parceiros-container').innerHTML = data;
+                           
                                         
                                         // Carrega quemsomos.html
                                         fetch('sections/quemsomos.html')
@@ -76,7 +71,7 @@
                                     });
                             });
                     });
-            });
+        
 
         function initScripts() {
             // Script do slider (mesmo que você já tem)
